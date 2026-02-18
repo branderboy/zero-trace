@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areas of Coverage | ZeroTrace Biohazard | Washington DC, MD, VA</title>
-    <meta name="description" content="ZeroTrace Biohazard serves Washington DC, Maryland, and Virginia. Find biohazard remediation and hoarding cleanup near you.">
+    <title>Areas of Coverage | ZeroTrace Biohazard</title>
+    <meta name="description" content="ZeroTrace Biohazard serves Washington D.C., Maryland, and Virginia. Find biohazard remediation and hoarding cleanup near you.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: { extend: {
-                fontFamily: { sans: ['Inter','sans-serif'], heading: ['Oswald','sans-serif'] },
-                colors: { brand: { black:'#000000', dark:'#1a1a1a', green:'#7cba01', greenDark:'#4a7000', gray:'#f9fafb', white:'#ffffff', text:'#111111' }},
-                backgroundImage: { 'pattern-dots': "radial-gradient(#d1d5db 1px, transparent 1px)" },
+                fontFamily: { sans:['Inter','sans-serif'], heading:['Oswald','sans-serif'] },
+                colors: { brand: { black:'#000000', dark:'#1a1a1a', green:'#7cba01', greenDark:'#4a7000', gray:'#f9fafb', white:'#ffffff', text:'#111111' } },
                 boxShadow: { 'sharp':'0 4px 0px 0px #7cba01', 'card':'0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)', 'card-lg':'0 20px 40px -10px rgba(0,0,0,0.15)' }
             }}
         }
@@ -21,288 +20,285 @@
     <style>
         body{color:#111;background:#fff}
         h1,h2,h3,h4,h5,h6{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#000}
-        .btn-brand{display:inline-block;background:#7cba01;color:#fff;font-weight:800;text-transform:uppercase;padding:1.1rem 2.8rem;transition:all .2s;box-shadow:0 4px 6px rgba(124,186,1,.3);letter-spacing:.05em;font-size:1rem}
+        .btn-brand{display:inline-block;background:#7cba01;color:#fff;font-weight:800;text-transform:uppercase;padding:1rem 2.5rem;transition:all .2s ease;box-shadow:0 4px 6px rgba(124,186,1,.3);letter-spacing:.05em;font-size:1rem}
         .btn-brand:hover{background:#111;color:#7cba01;transform:translateY(-2px);box-shadow:0 6px 12px rgba(0,0,0,.2)}
-        .btn-outline{display:inline-block;background:transparent;color:#111;font-weight:700;text-transform:uppercase;padding:1.1rem 2.8rem;border:2px solid #111;transition:all .3s;letter-spacing:.05em;font-size:1rem}
+        .btn-outline{display:inline-block;background:transparent;color:#111;font-weight:700;text-transform:uppercase;padding:1rem 2.5rem;border:2px solid #111;transition:all .3s ease;letter-spacing:.05em;font-size:1rem}
         .btn-outline:hover{background:#111;color:#fff}
-        .btn-white{display:inline-block;background:#fff;color:#111;font-weight:800;text-transform:uppercase;padding:1.1rem 2.8rem;transition:all .2s;letter-spacing:.05em;font-size:1rem}
-        .btn-white:hover{background:#7cba01;color:#fff;transform:translateY(-2px)}
         .section-subtitle{color:#4a7000;font-weight:800;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:1.1rem;display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
         .section-subtitle::before{content:'\f780';font-family:"Font Awesome 6 Free";font-weight:900;color:#7cba01}
         #mobile-menu{transition:max-height .3s ease-in-out;max-height:0;overflow:hidden}
         #mobile-menu.open{max-height:600px}
+        .area-item{position:relative;padding-left:1.5rem;margin-bottom:.6rem;font-size:1rem;color:#444}
+        .area-item::before{content:'\f3c5';font-family:'Font Awesome 6 Free';font-weight:900;color:#7cba01;position:absolute;left:0;top:2px;font-size:.85em}
     </style>
 </head>
 <body class="bg-white">
-    <!-- Top Bar -->
-    <div class="bg-black text-white py-3 text-sm border-b border-gray-900 relative z-50">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center space-x-8">
-                <span class="flex items-center font-medium"><i class="fa-solid fa-location-dot text-brand-green mr-2"></i> 1201 Connecticut Ave. NW STE 531, Washington, DC 20036</span>
-                <span class="hidden md:flex items-center font-medium"><i class="fa-solid fa-clock text-brand-green mr-2"></i> Mon-Sun 08:00 AM - 05:00 PM | 24/7 Emergency</span>
+
+<!-- Top Bar -->
+<div class="bg-black text-white py-2 sm:py-3 text-xs sm:text-sm border-b border-gray-900 relative z-50">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center space-x-4 sm:space-x-8">
+            <span class="flex items-center font-medium"><i class="fa-solid fa-location-dot text-brand-green mr-2"></i><span class="hidden sm:inline">1201 Connecticut Ave. NW STE 531, Washington, DC 20036</span><span class="sm:hidden">Washington, DC</span></span>
+            <span class="hidden md:flex items-center font-medium"><i class="fa-solid fa-clock text-brand-green mr-2"></i> Mon-Sun 08:00 AM - 05:00 PM | 24/7 Emergency</span>
+        </div>
+        <div class="flex items-center space-x-4 sm:space-x-6">
+            <a href="mailto:support@zerotracebiohazard.com" class="hover:text-brand-green transition font-medium text-white hidden sm:inline">support@zerotracebiohazard.com</a>
+            <a href="tel:2028036356" class="text-brand-green hover:text-white font-bold uppercase text-xs tracking-wide">(202) 803-6356</a>
+        </div>
+    </div>
+</div>
+
+<!-- Nav -->
+<nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 lg:h-28 items-center">
+            <a href="index.html" class="flex-shrink-0"><img src="images/logo.svg?v=2" alt="ZeroTrace Biohazard" class="h-16 md:h-24 lg:h-28 w-auto object-contain"></a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="index.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Home</a>
+                <a href="about.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">About Us</a>
+                <a href="index.html#services" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Our Services</a>
+                <a href="areas.html" class="font-heading font-bold text-lg text-brand-green transition uppercase tracking-wide">Service Areas</a>
+                <a href="quote.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Quote</a>
+                <a href="contact.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Contact Us</a>
+                <div class="flex items-center gap-6 ml-4 pl-6 border-l border-gray-200">
+                    <div class="text-right"><span class="block text-xs font-bold text-brand-green uppercase tracking-wider">24/7 Hotline</span><a href="tel:2028036356" class="block font-heading font-bold text-xl text-brand-text leading-none hover:text-brand-green transition">(202) 803-6356</a></div>
+                    <a href="quote.html" class="btn-brand text-sm shadow-sharp">Request a Quote</a>
+                </div>
             </div>
-            <div class="flex items-center space-x-6 mt-2 md:mt-0">
-                <a href="mailto:support@zerotracebiohazard.com" class="hover:text-brand-green transition font-medium text-white">support@zerotracebiohazard.com</a>
-                <span class="text-gray-700">|</span>
-                <a href="tel:2028036356" class="text-brand-green hover:text-white font-bold uppercase text-xs tracking-wide">(202) 803-6356</a>
+            <div class="lg:hidden"><button id="mobile-menu-btn" class="text-black text-3xl"><i class="fa-solid fa-bars"></i></button></div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100">
+        <div class="px-6 pt-6 pb-8 space-y-4">
+            <a href="index.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Home</a>
+            <a href="about.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">About Us</a>
+            <a href="index.html#services" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Our Services</a>
+            <a href="areas.html" class="block font-heading font-bold text-brand-green text-xl tracking-wide border-b border-gray-100 pb-2">Service Areas</a>
+            <a href="contact.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Contact Us</a>
+            <a href="quote.html" class="block w-full text-center bg-brand-green text-white py-4 font-bold uppercase tracking-widest">Request a Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-black py-12 md:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image:url('data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot; viewBox=&quot;0 0 200 200&quot;&gt;&lt;text x=&quot;100&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; font-size=&quot;100&quot; fill=&quot;%237cba01&quot;&gt;☣&lt;/text&gt;&lt;/svg&gt;');background-size:200px 200px"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center gap-2 text-sm text-gray-400 mb-4 font-sans">
+            <a href="index.html" class="hover:text-brand-green transition">Zero Trace Biohazard</a>
+            <i class="fa-solid fa-chevron-right text-xs text-brand-green"></i>
+            <span class="text-white">Areas of Coverage</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-white font-heading">Areas of Coverage</h1>
+    </div>
+</section>
+
+<!-- Service Area Intro -->
+<section class="py-14 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 md:mb-16">
+            <span class="section-subtitle justify-center">Service Area</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-brand-black mb-6 font-heading">Find Biohazard Remediation &amp; Hoarding Cleanup Near You</h2>
+            <p class="text-gray-600 text-base md:text-lg max-w-3xl mx-auto font-sans leading-relaxed">If your location is not covered in the list below and you live in or around Washington, D.C., don't worry. Give us a call at <a href="tel:3013437449" class="text-brand-green font-bold hover:underline">(301) 343-7449</a> or fill in our contact form and let us know your location and we will do our upmost to find a service provider that covers your area.</p>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16 md:mb-20">
+            <div class="bg-brand-gray p-6 md:p-8 shadow-card text-center border-t-4 border-brand-green">
+                <i class="fa-solid fa-location-dot text-brand-green text-3xl md:text-4xl mb-4"></i>
+                <h4 class="font-heading font-bold text-base md:text-lg text-brand-black uppercase mb-2">Post Address</h4>
+                <p class="text-gray-600 text-sm md:text-base font-sans">1201 Connecticut Ave. NW STE 531, Washington, DC 20036</p>
+            </div>
+            <div class="bg-brand-gray p-6 md:p-8 shadow-card text-center border-t-4 border-brand-green">
+                <i class="fa-solid fa-phone text-brand-green text-3xl md:text-4xl mb-4"></i>
+                <h4 class="font-heading font-bold text-base md:text-lg text-brand-black uppercase mb-2">Contact Phone</h4>
+                <p class="text-gray-600 text-sm md:text-base font-sans"><a href="tel:2028036356" class="hover:text-brand-green transition">(202) 803-6356</a></p>
+            </div>
+            <div class="bg-brand-gray p-6 md:p-8 shadow-card text-center border-t-4 border-brand-green">
+                <i class="fa-solid fa-envelope text-brand-green text-3xl md:text-4xl mb-4"></i>
+                <h4 class="font-heading font-bold text-base md:text-lg text-brand-black uppercase mb-2">E-mail Address</h4>
+                <p class="text-gray-600 text-sm md:text-base font-sans"><a href="mailto:support@zerotracebiohazard.com" class="hover:text-brand-green transition">support@zerotracebiohazard.com</a></p>
+            </div>
+            <div class="bg-brand-gray p-6 md:p-8 shadow-card text-center border-t-4 border-brand-green">
+                <i class="fa-solid fa-clock text-brand-green text-3xl md:text-4xl mb-4"></i>
+                <h4 class="font-heading font-bold text-base md:text-lg text-brand-black uppercase mb-2">Opening Hours</h4>
+                <p class="text-gray-600 text-sm md:text-base font-sans">Mon-Sun: 08:00 AM - 05:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Areas Header -->
+        <div class="text-center mb-10 md:mb-14">
+            <span class="section-subtitle justify-center">Areas We Cover</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-brand-black mb-4 font-heading">Our Service Regions</h2>
+            <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto font-sans">Our team will offer you a free price estimate and arrange a service call based on your availability.</p>
+        </div>
+
+        <!-- State Listings -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+            <!-- Maryland -->
+            <div class="bg-brand-gray p-6 md:p-10 shadow-card border-t-4 border-brand-green">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-white"><i class="fa-solid fa-map-location-dot text-xl"></i></div>
+                    <h3 class="text-2xl md:text-3xl font-heading font-bold text-brand-black">Maryland</h3>
+                </div>
+                <ul class="space-y-1">
+                    <li class="area-item">Baltimore</li>
+                    <li class="area-item">Columbia</li>
+                    <li class="area-item">Germantown</li>
+                    <li class="area-item">Frederick</li>
+                    <li class="area-item">Waldorf</li>
+                    <li class="area-item">Silver Spring</li>
+                    <li class="area-item">Ellicott City</li>
+                    <li class="area-item">Glen Burnie</li>
+                    <li class="area-item">Gaithersburg</li>
+                    <li class="area-item">Bethesda</li>
+                    <li class="area-item">Rockville</li>
+                    <li class="area-item">Dundalk</li>
+                    <li class="area-item">Severn</li>
+                    <li class="area-item">Bel Air South</li>
+                    <li class="area-item">Towson</li>
+                    <li class="area-item">Bowie</li>
+                    <li class="area-item">Aspen Hill</li>
+                    <li class="area-item">Wheaton</li>
+                    <li class="area-item">North Bethesda</li>
+                    <li class="area-item">Potomac</li>
+                    <li class="area-item">Odenton</li>
+                    <li class="area-item">Hagerstown</li>
+                    <li class="area-item">Catonsville</li>
+                    <li class="area-item">Essex</li>
+                    <li class="area-item font-bold text-brand-green">And Surrounding Areas</li>
+                </ul>
+            </div>
+
+            <!-- Virginia -->
+            <div class="bg-brand-gray p-6 md:p-10 shadow-card border-t-4 border-brand-green">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-white"><i class="fa-solid fa-map-location-dot text-xl"></i></div>
+                    <h3 class="text-2xl md:text-3xl font-heading font-bold text-brand-black">Virginia</h3>
+                </div>
+                <ul class="space-y-1">
+                    <li class="area-item">Virginia Beach</li>
+                    <li class="area-item">Chesapeake</li>
+                    <li class="area-item">Arlington</li>
+                    <li class="area-item">Norfolk</li>
+                    <li class="area-item">Richmond</li>
+                    <li class="area-item">Newport News</li>
+                    <li class="area-item">Alexandria</li>
+                    <li class="area-item">Hampton</li>
+                    <li class="area-item">Suffolk</li>
+                    <li class="area-item">Roanoke</li>
+                    <li class="area-item">Portsmouth</li>
+                    <li class="area-item">Lynchburg</li>
+                    <li class="area-item">Dale City</li>
+                    <li class="area-item">Centreville</li>
+                    <li class="area-item">Reston</li>
+                    <li class="area-item">Harrisonburg</li>
+                    <li class="area-item">McLean</li>
+                    <li class="area-item">Leesburg</li>
+                    <li class="area-item">Tuckahoe</li>
+                    <li class="area-item">Ashburn</li>
+                    <li class="area-item">Blacksburg</li>
+                    <li class="area-item">Lake Ridge</li>
+                    <li class="area-item">Charlottesville</li>
+                    <li class="area-item">Woodbridge</li>
+                    <li class="area-item">Burke</li>
+                    <li class="area-item font-bold text-brand-green">And Surrounding Areas</li>
+                </ul>
+            </div>
+
+            <!-- Washington, D.C. -->
+            <div class="bg-brand-gray p-6 md:p-10 shadow-card border-t-4 border-brand-green">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-white"><i class="fa-solid fa-map-location-dot text-xl"></i></div>
+                    <h3 class="text-2xl md:text-3xl font-heading font-bold text-brand-black">Washington, D.C.</h3>
+                </div>
+                <ul class="space-y-1">
+                    <li class="area-item">Adams Morgan</li>
+                    <li class="area-item">Anacostia</li>
+                    <li class="area-item">Brookland</li>
+                    <li class="area-item">Capitol Hill</li>
+                    <li class="area-item">Capitol Riverfront</li>
+                    <li class="area-item">Columbia Heights</li>
+                    <li class="area-item">Congress Heights</li>
+                    <li class="area-item">Downtown</li>
+                    <li class="area-item">Dupont Circle</li>
+                    <li class="area-item">Foggy Bottom</li>
+                    <li class="area-item">Georgetown</li>
+                    <li class="area-item">H Street NE</li>
+                    <li class="area-item">Ivy City</li>
+                    <li class="area-item">Logan Circle</li>
+                    <li class="area-item">Mount Vernon Square</li>
+                    <li class="area-item">National Mall</li>
+                    <li class="area-item">NoMa</li>
+                    <li class="area-item">Penn Quarter &amp; Chinatown</li>
+                    <li class="area-item">Petworth</li>
+                    <li class="area-item">Shaw</li>
+                    <li class="area-item">Southwest &amp; The Wharf</li>
+                    <li class="area-item">U Street</li>
+                    <li class="area-item">Upper Northwest</li>
+                    <li class="area-item">Woodley Park</li>
+                    <li class="area-item font-bold text-brand-green">And Surrounding Areas</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- Nav -->
-    <nav class="bg-white sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-28 items-center">
-                <a href="index.html" class="flex-shrink-0"><img src="images/logo.svg" alt="ZeroTrace Biohazard" class="h-20 md:h-24 w-auto object-contain"></a>
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="index.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Home</a>
-                    <a href="about.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">About Us</a>
-                    <a href="services.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Our Services</a>
-                    <a href="index.html#faq" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Support</a>
-                    <a href="contact.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Contact Us</a>
-                    <div class="flex items-center gap-6 ml-4 pl-6 border-l border-gray-200">
-                        <div class="text-right">
-                            <span class="block text-xs font-bold text-brand-green uppercase tracking-wider">24/7 Hotline</span>
-                            <a href="tel:2028036356" class="block font-heading font-bold text-xl text-brand-text leading-none hover:text-brand-green transition">(202) 803-6356</a>
-                        </div>
-                        <a href="quote.html" class="btn-brand text-sm shadow-sharp">Request a Quote</a>
-                    </div>
-                </div>
-                <div class="lg:hidden flex items-center"><button id="mobile-menu-btn" class="text-black text-3xl"><i class="fa-solid fa-bars"></i></button></div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100">
-            <div class="px-6 pt-6 pb-8 space-y-4">
-                <a href="index.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Home</a>
-                <a href="about.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">About Us</a>
-                <a href="services.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Our Services</a>
-                <a href="index.html#faq" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Support</a>
-                <a href="contact.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Contact Us</a>
-                <a href="quote.html" class="block w-full text-center bg-brand-green text-white py-4 font-bold uppercase tracking-widest">Request a Quote</a>
-            </div>
-        </div>
-    </nav>
+</section>
 
-    <!-- Hero -->
-    <section class="relative py-28 bg-black overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-brand-green/20 via-transparent to-transparent"></div>
-        <div class="absolute inset-0 bg-pattern-dots bg-[length:24px_24px] opacity-10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex items-center gap-3 text-brand-green font-heading font-bold text-lg uppercase tracking-widest mb-6">
-                <a href="index.html" class="hover:text-white transition">Zero Trace Biohazard</a>
-                <i class="fa-solid fa-chevron-right text-sm"></i>
-                <span class="text-white">Areas of Coverage</span>
-            </div>
-            <h1 class="text-5xl lg:text-8xl font-bold text-white font-heading leading-[0.9]">Areas of Coverage</h1>
+<!-- CTA -->
+<section class="py-14 md:py-20 bg-brand-green relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 font-heading uppercase">Don't See Your Area?</h2>
+        <p class="text-white/80 text-base md:text-xl font-sans mb-10 max-w-2xl mx-auto">Give us a call and we'll do our best to accommodate your location or find a provider near you.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:2028036356" class="btn-brand bg-black text-white hover:bg-white hover:text-black text-base md:text-lg px-8 py-4 flex items-center justify-center"><i class="fa-solid fa-phone mr-3"></i> (202) 803-6356</a>
+            <a href="quote.html" class="btn-outline text-base md:text-lg px-8 py-4 flex items-center justify-center border-white text-white hover:bg-white hover:text-brand-black"><i class="fa-solid fa-file-invoice mr-3"></i> Request a Quote</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Intro + Contact Cards -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="section-subtitle justify-center">Service Area</span>
-                <h2 class="text-4xl lg:text-6xl font-bold text-brand-black mb-6 font-heading uppercase leading-tight">Find Biohazard Remediation &amp; Hoarding Cleanup Near You</h2>
-                <p class="text-gray-600 text-xl max-w-4xl mx-auto font-medium leading-relaxed">If your location is not covered below and you live in or around Washington, D.C., don't worry. Give us a call at <a href="tel:3013437449" class="text-brand-green font-bold hover:underline">(301) 343-7449</a> or fill in our contact form and we will do our utmost to find a service provider that covers your area.</p>
+<!-- Footer -->
+<footer class="bg-black text-white pt-12 md:pt-16 pb-8 border-t border-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+            <div>
+                <span class="font-heading font-bold text-2xl tracking-wide block mb-4">ZERO<span class="text-brand-green">TRACE</span></span>
+                <p class="text-gray-400 text-sm font-sans leading-relaxed">Our expert cleaners are carefully selected and screened and then fully trained to provide top-quality services at all times.</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-                <div class="bg-brand-gray p-8 shadow-card text-center border-t-4 border-brand-green hover:-translate-y-1 transition duration-300">
-                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white mx-auto mb-4 shadow-lg"><i class="fa-solid fa-location-dot text-4xl"></i></div>
-                    <h4 class="font-heading font-bold text-xl text-brand-black uppercase mb-2">Post Address</h4>
-                    <p class="text-gray-600 text-base font-sans">1201 Connecticut Ave. NW STE 531, Washington, DC 20036</p>
-                </div>
-                <div class="bg-brand-gray p-8 shadow-card text-center border-t-4 border-brand-green hover:-translate-y-1 transition duration-300">
-                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white mx-auto mb-4 shadow-lg"><i class="fa-solid fa-phone text-4xl"></i></div>
-                    <h4 class="font-heading font-bold text-xl text-brand-black uppercase mb-2">Contact Phone</h4>
-                    <a href="tel:2028036356" class="text-brand-green text-xl font-bold font-heading hover:text-brand-black transition">(202) 803-6356</a>
-                </div>
-                <div class="bg-brand-gray p-8 shadow-card text-center border-t-4 border-brand-green hover:-translate-y-1 transition duration-300">
-                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white mx-auto mb-4 shadow-lg"><i class="fa-solid fa-envelope text-4xl"></i></div>
-                    <h4 class="font-heading font-bold text-xl text-brand-black uppercase mb-2">E-mail Address</h4>
-                    <a href="mailto:support@zerotracebiohazard.com" class="text-brand-green text-base font-bold hover:text-brand-black transition break-all">support@zerotracebiohazard.com</a>
-                </div>
-                <div class="bg-brand-gray p-8 shadow-card text-center border-t-4 border-brand-green hover:-translate-y-1 transition duration-300">
-                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white mx-auto mb-4 shadow-lg"><i class="fa-solid fa-clock text-4xl"></i></div>
-                    <h4 class="font-heading font-bold text-xl text-brand-black uppercase mb-2">Opening Hours</h4>
-                    <p class="text-gray-600 text-base font-sans">Mon-Sun: 08:00 AM - 05:00 PM</p>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm font-sans">
+                    <li><a href="index.html" class="text-gray-400 hover:text-brand-green transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-brand-green transition">About Us</a></li>
+                    <li><a href="index.html#services" class="text-gray-400 hover:text-brand-green transition">Services</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-brand-green transition">Contacts</a></li>
+                    <li><a href="index.html#faq" class="text-gray-400 hover:text-brand-green transition">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Contacts</h4>
+                <div class="space-y-3 text-sm font-sans text-gray-400">
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-green mt-1"></i>1201 Connecticut Ave. NW STE 531, Washington, D.C. 20036</p>
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-clock text-brand-green mt-1"></i>Mon-Sun 08:00 AM - 05:00 PM</p>
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-phone text-brand-green mt-1"></i><a href="tel:2028036356" class="hover:text-brand-green transition">(202) 803-6356 (24/7)</a></p>
                 </div>
             </div>
-            <div class="text-center mb-12">
-                <span class="section-subtitle justify-center">Areas We Cover</span>
-                <h3 class="text-3xl lg:text-4xl font-bold text-brand-black font-heading uppercase">Our team will offer you a free price estimate</h3>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Newsletter</h4>
+                <p class="text-gray-400 text-sm font-sans mb-4">Stay updated with our latest news.</p>
+                <form onsubmit="event.preventDefault();alert('Thank you for subscribing!')" class="flex flex-col sm:flex-row gap-2">
+                    <input type="email" placeholder="Your email" class="bg-white/10 border border-gray-700 text-white px-4 py-3 text-sm flex-1 focus:outline-none focus:border-brand-green" required>
+                    <button type="submit" class="bg-brand-green text-white px-6 py-3 font-bold text-sm uppercase hover:bg-brand-greenDark transition">Subscribe</button>
+                </form>
             </div>
         </div>
-    </section>
+        <div class="border-t border-gray-800 pt-6 text-center">
+            <p class="text-xs text-gray-500 font-sans">&copy; 2026 ZeroTrace Biohazard. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Maryland -->
-    <section class="py-20 bg-black text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-pattern-dots bg-[length:24px_24px] opacity-10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white shadow-lg flex-shrink-0"><i class="fa-solid fa-map-location-dot text-4xl"></i></div>
-                <h2 class="text-4xl lg:text-6xl font-bold text-white font-heading uppercase">Maryland</h2>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Baltimore</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Columbia</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Germantown</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Frederick</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Waldorf</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Silver Spring</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Ellicott City</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Glen Burnie</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Gaithersburg</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Bethesda</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Rockville</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Dundalk</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Severn</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Bel Air South</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Towson</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Bowie</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Aspen Hill</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Wheaton</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">North Bethesda</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Potomac</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Odenton</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Hagerstown</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Catonsville</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Essex</span></div>
-                <div class="bg-white/10 p-5 text-center hover:bg-brand-green transition border-t-2 border-brand-green"><span class="font-heading font-bold text-lg text-white uppercase">Fond du Lac</span></div>
-            </div>
-            <div class="mt-8 text-center"><span class="inline-flex items-center gap-3 bg-brand-green px-8 py-4 text-white font-heading font-bold text-xl uppercase tracking-wider"><i class="fa-solid fa-plus"></i> And Surrounding Areas</span></div>
-        </div>
-    </section>
-
-    <!-- Virginia -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white shadow-lg flex-shrink-0"><i class="fa-solid fa-map-location-dot text-4xl"></i></div>
-                <h2 class="text-4xl lg:text-6xl font-bold text-brand-black font-heading uppercase">Virginia</h2>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Virginia Beach</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Chesapeake</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Arlington</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Norfolk</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Richmond</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Newport News</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Alexandria</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Hampton</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Suffolk</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Roanoke</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Portsmouth</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Lynchburg</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Dale City</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Centreville</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Reston</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Harrisonburg</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">McLean</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Leesburg</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Tuckahoe</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Ashburn</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Blackburn</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Lake Ridge</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Charlottesville</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Woodbridge</span></div>
-                <div class="bg-brand-gray p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Burke</span></div>
-            </div>
-            <div class="mt-8 text-center"><span class="inline-flex items-center gap-3 bg-brand-green px-8 py-4 text-white font-heading font-bold text-xl uppercase tracking-wider"><i class="fa-solid fa-plus"></i> And Surrounding Areas</span></div>
-        </div>
-    </section>
-
-    <!-- Washington D.C. -->
-    <section class="py-20 bg-brand-gray relative overflow-hidden border-y border-gray-200">
-        <div class="absolute inset-0 bg-pattern-dots bg-[length:24px_24px] opacity-30"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="flex items-center gap-6 mb-12">
-                <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center text-white shadow-lg flex-shrink-0"><i class="fa-solid fa-landmark text-4xl"></i></div>
-                <h2 class="text-4xl lg:text-6xl font-bold text-brand-black font-heading uppercase">Washington, D.C.</h2>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Adams Morgan</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Anacostia</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Brookland</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Capitol Hill</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Capitol Riverfront</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Columbia Heights</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Congress Heights</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Downtown</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Dupont Circle</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Foggy Bottom</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Georgetown</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">H Street NE</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Ivy City</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Logan Circle</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Mt. Vernon Square</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">National Mall</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">NoMa</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Penn Quarter</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Petworth</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Shaw</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">SW &amp; The Wharf</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">U Street</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Upper Northwest</span></div>
-                <div class="bg-white p-5 text-center hover:bg-brand-green hover:text-white transition border-t-2 border-brand-green shadow-sm"><span class="font-heading font-bold text-lg uppercase">Woodley Park</span></div>
-            </div>
-            <div class="mt-8 text-center"><span class="inline-flex items-center gap-3 bg-brand-green px-8 py-4 text-white font-heading font-bold text-xl uppercase tracking-wider"><i class="fa-solid fa-plus"></i> And Surrounding Areas</span></div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-20 bg-brand-green relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h2 class="text-4xl lg:text-6xl font-bold text-white mb-6 font-heading uppercase">Don't See Your Area?</h2>
-            <p class="text-white/80 text-xl font-sans mb-10 max-w-2xl mx-auto">Give us a call and we'll do our best to connect you with a service provider that covers your location.</p>
-            <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="tel:2028036356" class="btn-white text-lg px-10 py-5 flex items-center justify-center"><i class="fa-solid fa-phone mr-3"></i> (202) 803-6356</a>
-                <a href="quote.html" class="btn-outline text-lg px-10 py-5 flex items-center justify-center border-white text-white hover:bg-white hover:text-brand-black">Request a Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-16 border-t border-brand-dark">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <div>
-                    <span class="font-heading font-bold text-3xl tracking-wide">ZERO<span class="text-brand-green">TRACE</span></span>
-                    <p class="text-gray-400 font-sans mt-4 text-base leading-relaxed">Our expert cleaners are carefully selected and screened and then fully trained to deliver top-quality services at all times.</p>
-                    <a href="quote.html" class="btn-brand mt-6 text-base inline-block">Request a Quote</a>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-xl uppercase text-white mb-6 tracking-wide">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-brand-green transition text-base font-medium">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-brand-green transition text-base font-medium">About Us</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-brand-green transition text-base font-medium">Services</a></li>
-                        <li><a href="areas.html" class="text-gray-400 hover:text-brand-green transition text-base font-medium">Areas of Coverage</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-brand-green transition text-base font-medium">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-xl uppercase text-white mb-6 tracking-wide">Contacts</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-brand-green mt-1"></i><span class="text-gray-400 text-base">1201 Connecticut Ave. NW STE 531, Washington, D.C. 20036</span></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-phone text-brand-green mt-1"></i><a href="tel:2028036356" class="text-gray-400 hover:text-brand-green transition text-base font-bold">(202) 803-6356</a></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-envelope text-brand-green mt-1"></i><a href="mailto:support@zerotracebiohazard.com" class="text-gray-400 hover:text-brand-green transition text-base">support@zerotracebiohazard.com</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-xl uppercase text-white mb-6 tracking-wide">Newsletter</h4>
-                    <p class="text-gray-400 text-base mb-4">Subscribe for updates and industry news.</p>
-                    <form onsubmit="event.preventDefault(); alert('Subscribed!');" class="flex flex-col gap-3">
-                        <input type="email" placeholder="Your Email" class="w-full bg-white/10 border border-gray-700 text-white p-4 focus:outline-none focus:border-brand-green transition text-base" required>
-                        <button type="submit" class="btn-brand text-base w-full py-4">Subscribe Now</button>
-                    </form>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center"><p class="text-base text-gray-500 font-sans">&copy; 2026 ZeroTrace Biohazard. All Rights Reserved.</p></div>
-        </div>
-    </footer>
-    <script>
-        const btn=document.getElementById('mobile-menu-btn');
-        const menu=document.getElementById('mobile-menu');
-        btn.addEventListener('click',()=>{menu.classList.toggle('open')});
-    </script>
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('open')});
+</script>
 </body>
 </html>
