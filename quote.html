@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | ZeroTrace Biohazard</title>
+    <meta name="description" content="Request a free quote for biohazard remediation, crime scene cleanup, or hoarding services from ZeroTrace Biohazard.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                fontFamily: { sans:['Inter','sans-serif'], heading:['Oswald','sans-serif'] },
+                colors: { brand: { black:'#000000', dark:'#1a1a1a', green:'#7cba01', greenDark:'#4a7000', gray:'#f9fafb', white:'#ffffff', text:'#111111' } },
+                boxShadow: { 'sharp':'0 4px 0px 0px #7cba01', 'card':'0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)', 'card-lg':'0 20px 40px -10px rgba(0,0,0,0.15)' }
+            }}
+        }
+    </script>
+    <style>
+        body{color:#111;background:#fff}
+        h1,h2,h3,h4,h5,h6{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.02em;color:#000}
+        .btn-brand{display:inline-block;background:#7cba01;color:#fff;font-weight:800;text-transform:uppercase;padding:1rem 2.5rem;transition:all .2s ease;box-shadow:0 4px 6px rgba(124,186,1,.3);letter-spacing:.05em;font-size:1rem}
+        .btn-brand:hover{background:#111;color:#7cba01;transform:translateY(-2px);box-shadow:0 6px 12px rgba(0,0,0,.2)}
+        .section-subtitle{color:#4a7000;font-weight:800;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:1.1rem;display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+        .section-subtitle::before{content:'\f780';font-family:"Font Awesome 6 Free";font-weight:900;color:#7cba01}
+        #mobile-menu{transition:max-height .3s ease-in-out;max-height:0;overflow:hidden}
+        #mobile-menu.open{max-height:600px}
+    </style>
+</head>
+<body class="bg-white">
+
+<!-- Top Bar -->
+<div class="bg-black text-white py-2 sm:py-3 text-xs sm:text-sm border-b border-gray-900 relative z-50">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center space-x-4 sm:space-x-8">
+            <span class="flex items-center font-medium"><i class="fa-solid fa-location-dot text-brand-green mr-2"></i><span class="hidden sm:inline">1201 Connecticut Ave. NW STE 531, Washington, DC 20036</span><span class="sm:hidden">Washington, DC</span></span>
+            <span class="hidden md:flex items-center font-medium"><i class="fa-solid fa-clock text-brand-green mr-2"></i> Mon-Sun 08:00 AM - 05:00 PM | 24/7 Emergency</span>
+        </div>
+        <div class="flex items-center space-x-4 sm:space-x-6">
+            <a href="mailto:support@zerotracebiohazard.com" class="hover:text-brand-green transition font-medium text-white hidden sm:inline">support@zerotracebiohazard.com</a>
+            <a href="tel:2028036356" class="text-brand-green hover:text-white font-bold uppercase text-xs tracking-wide">(202) 803-6356</a>
+        </div>
+    </div>
+</div>
+
+<!-- Nav -->
+<nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 lg:h-28 items-center">
+            <a href="index.html" class="flex-shrink-0"><img src="images/logo.svg?v=2" alt="ZeroTrace Biohazard" class="h-16 md:h-24 lg:h-28 w-auto object-contain"></a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Home</a>
+                <a href="about.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">About Us</a>
+                <a href="index.html#services" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Our Services</a>
+                <a href="index.html#faq" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Support</a>
+                <a href="contact.html" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Contact Us</a>
+                <div class="flex items-center gap-6 ml-4 pl-6 border-l border-gray-200">
+                    <div class="text-right"><span class="block text-xs font-bold text-brand-green uppercase tracking-wider">24/7 Hotline</span><a href="tel:2028036356" class="block font-heading font-bold text-xl text-brand-text leading-none hover:text-brand-green transition">(202) 803-6356</a></div>
+                    <a href="quote.html" class="btn-brand text-sm shadow-sharp">Request a Quote</a>
+                </div>
+            </div>
+            <div class="lg:hidden"><button id="mobile-menu-btn" class="text-black text-3xl"><i class="fa-solid fa-bars"></i></button></div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden bg-white border-t border-gray-100">
+        <div class="px-6 pt-6 pb-8 space-y-4">
+            <a href="index.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Home</a>
+            <a href="about.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">About Us</a>
+            <a href="index.html#services" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Our Services</a>
+            <a href="index.html#faq" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Support</a>
+            <a href="contact.html" class="block font-heading font-bold text-brand-black text-xl tracking-wide border-b border-gray-100 pb-2">Contact Us</a>
+            <a href="quote.html" class="block w-full text-center bg-brand-green text-white py-4 font-bold uppercase tracking-widest">Request a Quote</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-black py-12 md:py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image:url('data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot; viewBox=&quot;0 0 200 200&quot;&gt;&lt;text x=&quot;100&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; font-size=&quot;100&quot; fill=&quot;%237cba01&quot;&gt;☣&lt;/text&gt;&lt;/svg&gt;');background-size:200px 200px"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center gap-2 text-sm text-gray-400 mb-4 font-sans">
+            <a href="index.html" class="hover:text-brand-green transition">Zero Trace Biohazard</a>
+            <i class="fa-solid fa-chevron-right text-xs text-brand-green"></i>
+            <span class="text-white">Request a Quote</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-white font-heading">Request a Quote</h1>
+    </div>
+</section>
+
+<!-- Quote Form Section -->
+<section class="py-14 md:py-24 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 md:mb-14">
+            <span class="section-subtitle justify-center">Get Started</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-brand-black mb-4 font-heading">Get a Free Price Estimate</h2>
+            <p class="text-gray-600 text-base md:text-lg max-w-2xl mx-auto font-sans">We typically respond to forms within 24 hours of receipt. For immediate assistance, call <a href="tel:2028036356" class="text-brand-green font-bold hover:underline">(202) 803-6356</a>.</p>
+        </div>
+
+        <div class="bg-white shadow-card-lg flex flex-col lg:flex-row overflow-hidden border-t-8 border-brand-green">
+            <!-- Left Panel -->
+            <div class="lg:w-5/12 bg-brand-black text-white p-8 md:p-12 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6 font-heading text-white">Get a Price Quote Today!</h3>
+                    <p class="text-gray-400 font-sans mb-10 text-base md:text-lg">Trust us with all of your commercial or residential remediation needs. Services are offered without contract and can be modified at any time.</p>
+                    <div class="space-y-6 md:space-y-8">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-phone text-brand-green mt-1 mr-4 text-lg"></i>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase font-bold tracking-wider">Call Us</span>
+                                <a href="tel:2028036356" class="text-xl md:text-2xl font-bold hover:text-brand-green transition font-heading">(202) 803-6356</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-envelope text-brand-green mt-1 mr-4 text-lg"></i>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase font-bold tracking-wider">Email</span>
+                                <a href="mailto:support@zerotracebiohazard.com" class="text-sm font-sans text-gray-300 hover:text-brand-green transition">support@zerotracebiohazard.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-location-dot text-brand-green mt-1 mr-4 text-lg"></i>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase font-bold tracking-wider">Address</span>
+                                <span class="text-sm font-sans text-gray-300">1201 Connecticut Ave. NW STE 531<br>Washington, DC 20036</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-clock text-brand-green mt-1 mr-4 text-lg"></i>
+                            <div>
+                                <span class="block text-xs text-gray-500 uppercase font-bold tracking-wider">Hours</span>
+                                <span class="text-sm font-sans text-gray-300">Mon-Sun 08:00 AM - 05:00 PM<br>(24/7 Emergency)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Panel - Form -->
+            <div class="lg:w-7/12 p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-brand-black font-heading uppercase mb-8">Request Service</h3>
+                <form onsubmit="event.preventDefault(); alert('Request Received. A ZeroTrace Coordinator will call you shortly.');">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">First Name</label>
+                            <input type="text" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base" placeholder="First Name" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Last Name</label>
+                            <input type="text" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Phone</label>
+                            <input type="tel" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base" placeholder="(202) 000-0000" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Email</label>
+                            <input type="email" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Service Address</label>
+                        <input type="text" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base" placeholder="Street address, city, state, zip">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Service Needed</label>
+                        <select class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base">
+                            <option>Crime Scene &amp; Trauma Cleanup</option>
+                            <option>Unattended Death / Decomposition</option>
+                            <option>Accidental Death Scene</option>
+                            <option>Hoarding &amp; Extreme Clutter</option>
+                            <option>Vehicle Decontamination</option>
+                            <option>Infectious Disease Response</option>
+                            <option>Biohazard Remediation</option>
+                            <option>Extreme Cleaning</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Preferred Date of Service</label>
+                        <input type="date" class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Is This an Insurance Claim?</label>
+                        <div class="flex gap-6 mt-2">
+                            <label class="flex items-center gap-2 text-base font-medium cursor-pointer"><input type="radio" name="insurance" value="yes" class="accent-brand-green w-5 h-5"> Yes</label>
+                            <label class="flex items-center gap-2 text-base font-medium cursor-pointer"><input type="radio" name="insurance" value="no" class="accent-brand-green w-5 h-5"> No</label>
+                            <label class="flex items-center gap-2 text-base font-medium cursor-pointer"><input type="radio" name="insurance" value="unsure" class="accent-brand-green w-5 h-5"> Not Sure</label>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Brief Description</label>
+                        <textarea class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition h-32 text-base" placeholder="Tell us about your situation..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-brand text-xl shadow-sharp py-5">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white pt-12 md:pt-16 pb-8 border-t border-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+            <div>
+                <span class="font-heading font-bold text-2xl tracking-wide block mb-4">ZERO<span class="text-brand-green">TRACE</span></span>
+                <p class="text-gray-400 text-sm font-sans leading-relaxed">Our expert cleaners are carefully selected and screened and then fully trained to provide top-quality services at all times.</p>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm font-sans">
+                    <li><a href="index.html" class="text-gray-400 hover:text-brand-green transition">Home</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-brand-green transition">About Us</a></li>
+                    <li><a href="index.html#services" class="text-gray-400 hover:text-brand-green transition">Services</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-brand-green transition">Contacts</a></li>
+                    <li><a href="index.html#faq" class="text-gray-400 hover:text-brand-green transition">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Contacts</h4>
+                <div class="space-y-3 text-sm font-sans text-gray-400">
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-location-dot text-brand-green mt-1"></i>1201 Connecticut Ave. NW STE 531, Washington, D.C. 20036</p>
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-clock text-brand-green mt-1"></i>Mon-Sun 08:00 AM - 05:00 PM</p>
+                    <p class="flex items-start gap-2"><i class="fa-solid fa-phone text-brand-green mt-1"></i><a href="tel:2028036356" class="hover:text-brand-green transition">(202) 803-6356 (24/7)</a></p>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-heading font-bold text-lg text-white uppercase mb-4">Newsletter</h4>
+                <p class="text-gray-400 text-sm font-sans mb-4">Stay updated with our latest news.</p>
+                <form onsubmit="event.preventDefault();alert('Thank you for subscribing!')" class="flex flex-col sm:flex-row gap-2">
+                    <input type="email" placeholder="Your email" class="bg-white/10 border border-gray-700 text-white px-4 py-3 text-sm flex-1 focus:outline-none focus:border-brand-green" required>
+                    <button type="submit" class="bg-brand-green text-white px-6 py-3 font-bold text-sm uppercase hover:bg-brand-greenDark transition">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 text-center">
+            <p class="text-xs text-gray-500 font-sans">&copy; 2026 ZeroTrace Biohazard. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('open')});
+</script>
+</body>
+</html>
