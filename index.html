@@ -195,7 +195,7 @@
             <div class="flex justify-between h-28 items-center">
                 <!-- Logo -->
                 <a href="#" class="flex-shrink-0">
-                    <img src="logo 5.jpg" alt="ZeroTrace Biohazard" class="h-24 md:h-28 w-auto object-contain">
+                    <img src="logo.svg" alt="ZeroTrace Biohazard" class="h-24 md:h-28 w-auto object-contain">
                 </a>
                 
                 <!-- Desktop Menu -->
@@ -238,16 +238,21 @@
 
     <!-- Hero Section: Full Background Image -->
     <header class="relative min-h-[85vh] flex items-center overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="hero image main.jpg" alt="" class="w-full h-full object-cover hero-bg-fade">
+        <!-- Background: Image with CSS fallback -->
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0f 25%, #2a2a15 50%, #1a1a0a 75%, #0a0a0a 100%);">
+            <img src="hero.jpg" alt="" class="w-full h-full object-cover hero-bg-fade" onerror="this.style.display='none'">
         </div>
+        <!-- Biohazard pattern overlay -->
+        <div class="absolute inset-0 z-[1] opacity-[0.04]" style="background-image: url('data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot; viewBox=&quot;0 0 200 200&quot;&gt;&lt;text x=&quot;100&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; font-size=&quot;100&quot; fill=&quot;%237cba01&quot;&gt;☣&lt;/text&gt;&lt;/svg&gt;'); background-size: 200px 200px;"></div>
+        <!-- Caution tape stripe accent -->
+        <div class="absolute bottom-40 left-0 right-0 z-[2] h-8 opacity-20" style="background: repeating-linear-gradient(45deg, #d4a800, #d4a800 20px, #000 20px, #000 40px); transform: rotate(-2deg) scale(1.1);"></div>
         <!-- Dark Overlay for Text Readability -->
-        <div class="absolute inset-0 bg-black/70 z-[1]"></div>
-        <!-- Subtle Green Gradient Accent -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent z-[2]"></div>
+        <div class="absolute inset-0 bg-black/50 z-[3]"></div>
+        <!-- Green Gradient Accent -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent z-[4]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-[4]"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-[5] w-full pt-10">
             <div class="max-w-3xl">
                 <!-- OSHA Tag -->
                 <div class="inline-flex items-center gap-3 px-4 py-2 bg-brand-green/90 text-white text-xs font-bold uppercase tracking-widest mb-8">
@@ -429,9 +434,7 @@
 
     <!-- Why Hire Us (White Background) -->
     <section id="about" class="py-20 bg-brand-gray relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="flip.jpg" alt="" class="w-full h-full object-cover opacity-5 grayscale mix-blend-multiply">
-        </div>
+        <div class="absolute inset-0 z-0" style="background: radial-gradient(ellipse at center, rgba(124,186,1,0.03) 0%, transparent 70%);"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
