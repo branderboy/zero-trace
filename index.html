@@ -22,8 +22,8 @@
                         brand: {
                             black: '#000000',
                             dark: '#1a1a1a',
-                            green: '#7cba01',
-                            greenDark: '#4a7000',
+                            green: '#007F00',
+                            greenDark: '#005500',
                             gray: '#f9fafb',
                             white: '#ffffff',
                             text: '#111111',
@@ -33,7 +33,7 @@
                         'pattern-dots': "radial-gradient(#d1d5db 1px, transparent 1px)",
                     },
                     boxShadow: {
-                        'sharp': '0 4px 0px 0px #7cba01',
+                        'sharp': '0 4px 0px 0px #007F00',
                         'card': '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)',
                         'card-lg': '0 20px 40px -10px rgba(0,0,0,0.15)',
                     }
@@ -47,11 +47,11 @@
         h1,h2,h3,h4,h5,h6 { font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.02em; color:#000; }
 
         .btn-brand {
-            display:inline-block; background:#7cba01; color:#fff; font-weight:800;
+            display:inline-block; background:#007F00; color:#fff; font-weight:800;
             text-transform:uppercase; padding:1.1rem 2.8rem; transition:all .2s ease;
-            box-shadow:0 4px 6px rgba(124,186,1,.3); letter-spacing:.05em; font-size:1rem;
+            box-shadow:0 4px 6px rgba(0,127,0,.3); letter-spacing:.05em; font-size:1rem;
         }
-        .btn-brand:hover { background:#111; color:#7cba01; transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,.2); }
+        .btn-brand:hover { background:#111; color:#007F00; transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,.2); }
 
         .btn-outline {
             display:inline-block; background:transparent; color:#111; font-weight:700;
@@ -65,19 +65,19 @@
             text-transform:uppercase; padding:1.1rem 2.8rem; transition:all .2s ease;
             letter-spacing:.05em; font-size:1rem;
         }
-        .btn-white:hover { background:#7cba01; color:#fff; transform:translateY(-2px); }
+        .btn-white:hover { background:#007F00; color:#fff; transform:translateY(-2px); }
 
         .section-subtitle {
-            color:#4a7000; font-weight:800; font-family:'Oswald',sans-serif;
+            color:#005500; font-weight:800; font-family:'Oswald',sans-serif;
             text-transform:uppercase; letter-spacing:.1em; font-size:1.1rem;
             display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem;
         }
-        .section-subtitle::before { content:'\f780'; font-family:"Font Awesome 6 Free"; font-weight:900; color:#7cba01; }
+        .section-subtitle::before { content:'\f780'; font-family:"Font Awesome 6 Free"; font-weight:900; color:#007F00; }
 
         .bio-list li { position:relative; padding-left:2rem; margin-bottom:.8rem; }
         .bio-list li::before {
             content:'\f780'; font-family:'Font Awesome 6 Free'; font-weight:900;
-            color:#7cba01; position:absolute; left:0; top:4px; font-size:.9em;
+            color:#007F00; position:absolute; left:0; top:4px; font-size:.9em;
         }
 
         @keyframes heroFadeIn { from{opacity:0} to{opacity:1} }
@@ -293,7 +293,7 @@
     <!-- ==================== SERVICES ==================== -->
     <section id="services" class="py-14 md:py-24 relative overflow-hidden bg-brand-gray">
         <!-- Subtle depth pattern -->
-        <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 50%, rgba(124,186,1,0.06) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(124,186,1,0.04) 0%, transparent 40%);"></div>
+        <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 50%, rgba(0,127,0,0.06) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(0,127,0,0.04) 0%, transparent 40%);"></div>
         <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-brand-green to-transparent opacity-40"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-14 md:mb-20">
@@ -421,7 +421,7 @@
 
     <!-- ==================== OUR WORK IN ACTION ==================== -->
     <section class="py-14 md:py-24 relative overflow-hidden border-b border-gray-200" style="background: linear-gradient(135deg, #0c0c1a 0%, #0a0f1e 25%, #0d1525 50%, #081018 75%, #06060f 100%);">
-        <div class="absolute inset-0 opacity-[0.05]" style="background-image: radial-gradient(circle at 1px 1px, rgba(124,186,1,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
+        <div class="absolute inset-0 opacity-[0.05]" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,127,0,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12 md:mb-16">
                 <span class="text-brand-green font-heading font-bold uppercase tracking-widest text-lg mb-2 flex items-center justify-center gap-2"><i class="fa-solid fa-biohazard"></i> See The Difference</span>
