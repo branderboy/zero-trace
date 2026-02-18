@@ -149,6 +149,15 @@
             font-size: 0.9em;
         }
 
+        /* Hero Background Fade-In */
+        @keyframes heroFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero-bg-fade {
+            animation: heroFadeIn 1.5s ease-out forwards;
+        }
+
         /* Mobile Menu */
         #mobile-menu {
             transition: max-height 0.3s ease-in-out;
@@ -183,7 +192,7 @@
             <div class="flex justify-between h-24 items-center">
                 <!-- Logo -->
                 <a href="#" class="flex-shrink-0">
-                    <img src="logo 5.jpg" alt="ZeroTrace Biohazard" class="h-20 w-auto object-contain">
+                    <img src="logo.png" alt="ZeroTrace Biohazard" class="h-20 w-auto object-contain">
                 </a>
                 
                 <!-- Desktop Menu -->
@@ -224,66 +233,54 @@
         </div>
     </nav>
 
-    <!-- Hero Section: Matches Screenshot -->
-    <header class="relative min-h-[85vh] flex items-center overflow-hidden bg-brand-gray">
-        <!-- Dot Pattern Background (Matches Screenshot) -->
-        <div class="absolute inset-0 bg-pattern-dots bg-[length:24px_24px] opacity-40"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Content Side -->
-                <div class="relative z-20">
-                    <!-- OSHA Tag (Black Box, White Text, Green Dot) -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 bg-black text-white text-xs font-bold uppercase tracking-widest mb-8">
-                        <span class="w-2 h-2 rounded-full bg-brand-green"></span>
-                        OSHA-Certified & Insured
-                    </div>
-                    
-                    <!-- Typography Stack (Matches Screenshot) -->
-                    <h1 class="text-6xl lg:text-8xl font-bold text-black leading-[0.9] mb-8 font-heading">
-                        BIOHAZARD <br> 
-                        <span class="text-brand-green">REMEDIATION</span> <br> 
-                        SPECIALISTS
-                    </h1>
-                    
-                    <p class="text-lg text-gray-700 font-sans mb-10 max-w-lg leading-relaxed font-medium pl-2 border-l-4 border-brand-green">
-                        We remove liability and restore safety. The trusted partner for insurance carriers and property managers in DC, MD, and VA.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-6">
-                        <a href="tel:2028036356" class="btn-brand shadow-card flex items-center justify-center">
-                            <i class="fa-solid fa-phone mr-3"></i> Emergency Dispatch
-                        </a>
-                        <a href="#contact" class="btn-outline flex items-center justify-center">
-                            Get An Estimate
-                        </a>
-                    </div>
+    <!-- Hero Section -->
+    <header class="relative min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Hero Background Image with Fade -->
+        <div class="absolute inset-0">
+            <img src="hero-bg.jpg" alt="" class="w-full h-full object-cover hero-bg-fade">
+            <!-- Gradient overlays for fade effect -->
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white"></div>
+        </div>
 
-                    <div class="mt-12 flex items-center gap-8 text-sm font-heading font-bold text-gray-500 uppercase tracking-widest">
-                        <span class="flex items-center"><i class="fa-solid fa-shield-virus text-brand-green mr-2"></i> Trained & Insured</span>
-                        <span class="flex items-center"><i class="fa-solid fa-hospital text-brand-green mr-2"></i> Hospital Grade</span>
-                    </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16">
+            <!-- Content -->
+            <div class="max-w-2xl relative z-20">
+                <!-- OSHA Tag -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 bg-black text-white text-xs font-bold uppercase tracking-widest mb-8">
+                    <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                    OSHA-Certified & Insured
                 </div>
-                
-                <!-- Visual Side -->
-                <div class="hidden lg:block relative">
-                    <!-- Main Image Card -->
-                    <div class="bg-white p-2 shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500 border border-gray-200 clip-spike">
-                       <img src="hero image main.jpg" alt="Team" class="w-full h-auto grayscale hover:grayscale-0 transition duration-500">
-                       <div class="p-4 bg-black text-white flex justify-between items-center">
-                            <div>
-                                <span class="block font-heading font-bold text-lg text-brand-green">ZeroTrace Guarantee</span>
-                                <span class="text-xs text-white uppercase tracking-widest">100% Decontamination</span>
-                            </div>
-                            <i class="fa-solid fa-circle-check text-3xl text-brand-green"></i>
-                       </div>
-                    </div>
+
+                <!-- Typography Stack -->
+                <h1 class="text-6xl lg:text-8xl font-bold text-black leading-[0.9] mb-8 font-heading">
+                    BIOHAZARD <br>
+                    <span class="text-brand-green">REMEDIATION</span> <br>
+                    SPECIALISTS
+                </h1>
+
+                <p class="text-lg text-gray-700 font-sans mb-10 max-w-lg leading-relaxed font-medium pl-2 border-l-4 border-brand-green">
+                    We remove liability and restore safety. The trusted partner for insurance carriers and property managers in DC, MD, and VA.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="tel:2028036356" class="btn-brand shadow-card flex items-center justify-center">
+                        <i class="fa-solid fa-phone mr-3"></i> Emergency Dispatch
+                    </a>
+                    <a href="#contact" class="btn-outline flex items-center justify-center">
+                        Get An Estimate
+                    </a>
+                </div>
+
+                <div class="mt-12 flex flex-wrap items-center gap-8 text-sm font-heading font-bold text-gray-500 uppercase tracking-widest">
+                    <span class="flex items-center"><i class="fa-solid fa-shield-virus text-brand-green mr-2"></i> Trained & Insured</span>
+                    <span class="flex items-center"><i class="fa-solid fa-hospital text-brand-green mr-2"></i> Hospital Grade</span>
                 </div>
             </div>
         </div>
-        
-        <!-- Bottom Fade/Slant -->
-        <div class="absolute bottom-0 left-0 w-full h-24 bg-white clip-slant z-10"></div>
+
+        <!-- Bottom Fade -->
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
     </header>
 
     <!-- Services Section (Light Cards) -->
