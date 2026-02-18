@@ -256,29 +256,85 @@
 </section>
 
 <!-- How Our Company Works -->
-<section class="py-14 md:py-24 bg-black text-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10" style="background:radial-gradient(#d1d5db 1px,transparent 1px);background-size:24px 24px"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-10 md:mb-20">
-            <span class="text-brand-green font-heading font-bold uppercase tracking-widest text-base md:text-lg mb-4 block">We Want to Help!</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 font-heading">How Our Company Works</h2>
-            <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto font-sans leading-relaxed">We'll ask for specific information to help us to determine the type of work or service you need. If you're in need of biohazard remediation, depending on your location, we can typically respond within a few hours. If you need hoarding or clutter cleaning, there's typically a seven to ten day wait for service.</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6 md:gap-10">
-            <div class="bg-white/10 p-6 md:p-10 text-center hover:bg-white/15 transition border-t-2 border-brand-green">
-                <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6"><i class="fa-solid fa-calendar-check text-white text-2xl"></i></div>
-                <h4 class="font-heading font-bold text-xl text-white uppercase mb-4">Pick a Time</h4>
-                <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">Complete our "Request a Quote" form and pick an ideal date for service. We'll reach out to you, collect information and let you know if that date works for our team. If not, we'll schedule a time that's mutually beneficial.</p>
+<section class="relative overflow-hidden">
+    <!-- Full background image -->
+    <div class="absolute inset-0 z-0">
+        <img src="images/hero.jpg" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0f 25%, #2a2a15 50%, #1a1a0a 75%, #0a0a0a 100%);"></div>
+    </div>
+    <!-- Heavy dark overlay for text readability -->
+    <div class="absolute inset-0 bg-black/75 z-[1]"></div>
+    <!-- Green accent gradient from left -->
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-green/15 via-transparent to-transparent z-[2]"></div>
+    <!-- Caution tape accent -->
+    <div class="absolute top-0 left-0 right-0 z-[3] h-2 bg-brand-green"></div>
+
+    <div class="relative z-10 py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-14 md:mb-20">
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-brand-green/90 text-white text-xs font-bold uppercase tracking-widest mb-6">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    We Want to Help!
+                </div>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-heading uppercase leading-tight">How Our <span class="text-brand-green">Company</span> Works</h2>
+                <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto font-sans leading-relaxed">We'll ask for specific information to help us determine the type of work or service you need. If you're in need of biohazard remediation, depending on your location, we can typically respond within a few hours.</p>
             </div>
-            <div class="bg-white/10 p-6 md:p-10 text-center hover:bg-white/15 transition border-t-2 border-brand-green">
-                <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6"><i class="fa-solid fa-credit-card text-white text-2xl"></i></div>
-                <h4 class="font-heading font-bold text-xl text-white uppercase mb-4">Payment</h4>
-                <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">Prior to scheduling service, we'll discuss payment arrangements. If insurance is involved, we'll typically need your homeowner's insurance policy deductible up front. The remaining cost of service will be billed to insurance.</p>
+
+            <!-- Steps -->
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Step 1 -->
+                <div class="relative bg-black/60 backdrop-blur-sm border border-white/10 p-8 md:p-10 group hover:border-brand-green/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="absolute -top-5 left-8 bg-brand-green text-white font-heading font-bold text-lg w-10 h-10 flex items-center justify-center shadow-lg">01</div>
+                    <div class="mt-4 mb-6">
+                        <i class="fa-solid fa-calendar-check text-brand-green text-4xl"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-2xl text-white uppercase mb-4">Pick a Time</h4>
+                    <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">Complete our "Request a Quote" form and pick an ideal date for service. We'll reach out to you, collect information and let you know if that date works for our team.</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <a href="quote.html" class="text-brand-green font-bold uppercase text-sm tracking-widest hover:text-white transition">Get Started <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-black/60 backdrop-blur-sm border border-white/10 p-8 md:p-10 group hover:border-brand-green/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="absolute -top-5 left-8 bg-brand-green text-white font-heading font-bold text-lg w-10 h-10 flex items-center justify-center shadow-lg">02</div>
+                    <div class="mt-4 mb-6">
+                        <i class="fa-solid fa-file-invoice-dollar text-brand-green text-4xl"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-2xl text-white uppercase mb-4">Payment</h4>
+                    <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">We'll discuss payment arrangements before scheduling. If insurance is involved, we'll need your deductible up front. The remaining cost is billed directly to your carrier.</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <span class="text-brand-green font-bold uppercase text-sm tracking-widest">Direct Insurance Billing</span>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-black/60 backdrop-blur-sm border border-white/10 p-8 md:p-10 group hover:border-brand-green/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="absolute -top-5 left-8 bg-brand-green text-white font-heading font-bold text-lg w-10 h-10 flex items-center justify-center shadow-lg">03</div>
+                    <div class="mt-4 mb-6">
+                        <i class="fa-solid fa-user-check text-brand-green text-4xl"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-2xl text-white uppercase mb-4">Your Pro Arrives</h4>
+                    <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">An experienced, fully-equipped professional will show up on time and ready to work. It's not necessary for you to be present while services are being rendered.</p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <span class="text-brand-green font-bold uppercase text-sm tracking-widest"><i class="fa-solid fa-bolt mr-2"></i>Avg. Response &lt;2 Hrs</span>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white/10 p-6 md:p-10 text-center hover:bg-white/15 transition border-t-2 border-brand-green">
-                <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6"><i class="fa-solid fa-user-check text-white text-2xl"></i></div>
-                <h4 class="font-heading font-bold text-xl text-white uppercase mb-4">Your Pro Arrives</h4>
-                <p class="text-gray-400 text-sm md:text-base font-sans leading-relaxed">An experienced, fully-equipped professional will show up on time and ready to work. It's not necessary for you to be present while services are being rendered.</p>
+
+            <!-- Bottom CTA bar -->
+            <div class="mt-12 md:mt-16 bg-brand-green/10 border border-brand-green/30 backdrop-blur-sm p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-brand-green rounded-full flex items-center justify-center text-white flex-shrink-0">
+                        <i class="fa-solid fa-phone text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="block text-white font-heading font-bold text-xl uppercase">Need Immediate Help?</span>
+                        <span class="text-gray-400 font-sans text-sm">Our team is standing by 24/7 for emergency biohazard situations</span>
+                    </div>
+                </div>
+                <a href="tel:2028036356" class="btn-brand text-lg px-10 py-4 flex items-center flex-shrink-0"><i class="fa-solid fa-phone mr-3"></i> (202) 803-6356</a>
             </div>
         </div>
     </div>
