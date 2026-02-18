@@ -107,9 +107,10 @@
     <!-- Navigation -->
     <nav class="bg-white sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 items-center">
+            <div class="flex justify-between h-28 items-center">
+                <!-- Logo -->
                 <a href="#" class="flex-shrink-0">
-                    <img src="logo.png" alt="ZeroTrace Biohazard" class="h-20 w-auto object-contain">
+                    <img src="logo.svg" alt="ZeroTrace Biohazard" class="h-24 md:h-28 w-auto object-contain">
                 </a>
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#" class="font-heading font-bold text-lg text-brand-text hover:text-brand-green transition uppercase tracking-wide">Home</a>
@@ -141,140 +142,203 @@
         </div>
     </nav>
 
-    <!-- ==================== HERO ==================== -->
-    <header class="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="hero-bg.jpg" alt="" class="w-full h-full object-cover hero-bg-fade">
-            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/20"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white"></div>
+    <!-- Hero Section: Full Background Image -->
+    <header class="relative min-h-[85vh] flex items-center overflow-hidden">
+        <!-- Background: Image with CSS fallback -->
+        <div class="absolute inset-0 z-0" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0f 25%, #2a2a15 50%, #1a1a0a 75%, #0a0a0a 100%);">
+            <img src="hero.jpg" alt="" class="w-full h-full object-cover hero-bg-fade" onerror="this.style.display='none'">
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">
-            <div class="max-w-3xl relative z-20">
-                <div class="inline-flex items-center gap-3 px-5 py-2.5 bg-black text-white text-sm font-bold uppercase tracking-widest mb-8">
-                    <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-pulse"></span>
-                    Locally Owned and Operated
+        <!-- Biohazard pattern overlay -->
+        <div class="absolute inset-0 z-[1] opacity-[0.04]" style="background-image: url('data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot; viewBox=&quot;0 0 200 200&quot;&gt;&lt;text x=&quot;100&quot; y=&quot;120&quot; text-anchor=&quot;middle&quot; font-size=&quot;100&quot; fill=&quot;%237cba01&quot;&gt;☣&lt;/text&gt;&lt;/svg&gt;'); background-size: 200px 200px;"></div>
+        <!-- Caution tape stripe accent -->
+        <div class="absolute bottom-40 left-0 right-0 z-[2] h-8 opacity-20" style="background: repeating-linear-gradient(45deg, #d4a800, #d4a800 20px, #000 20px, #000 40px); transform: rotate(-2deg) scale(1.1);"></div>
+        <!-- Dark Overlay for Text Readability -->
+        <div class="absolute inset-0 bg-black/50 z-[3]"></div>
+        <!-- Green Gradient Accent -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent z-[4]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-[4]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-[5] w-full pt-10">
+            <div class="max-w-3xl">
+                <!-- OSHA Tag -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 bg-brand-green/90 text-white text-xs font-bold uppercase tracking-widest mb-8">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    Insurance-Approved &bull; OSHA-Certified &bull; Discreet
                 </div>
 
-                <h1 class="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-black leading-[0.85] mb-8 font-heading">
-                    Certified<br>
-                    <span class="text-brand-green">Decontamination</span><br>
-                    & Hoarding<br>
-                    <span class="text-brand-green">Cleanup</span> Specialists
+                <!-- Typography Stack -->
+                <h1 class="text-5xl lg:text-7xl font-bold text-white leading-[0.9] mb-6 font-heading">
+                    24/7 BIOHAZARD <br>
+                    <span class="text-brand-green">REMEDIATION</span> <br>
+                    <span class="text-4xl lg:text-5xl">FOR DC / MD / VA</span>
                 </h1>
 
-                <p class="text-xl lg:text-2xl text-gray-700 font-sans mb-12 max-w-2xl leading-relaxed font-medium pl-4 border-l-4 border-brand-green">
-                    The trusted remediation partner for insurance carriers, property managers, and adjusters across DC, MD, and VA. We remove liability, restore safety, and handle direct insurance billing so you don't have to.
+                <p class="text-lg text-gray-300 font-sans mb-10 max-w-lg leading-relaxed font-medium pl-2 border-l-4 border-brand-green">
+                    Insurance-approved biohazard remediation you can trust. Serving property managers, police departments, funeral homes, and insurance carriers across the DMV.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-6">
-                    <a href="tel:2028036356" class="btn-brand shadow-card text-lg flex items-center justify-center px-10 py-5">
-                        <i class="fa-solid fa-phone mr-3"></i> (202) 803-6356
+                    <a href="#contact" class="btn-brand shadow-card flex items-center justify-center">
+                        <i class="fa-solid fa-file-invoice mr-3"></i> Request Quote
                     </a>
-                    <a href="#contact" class="btn-outline text-lg flex items-center justify-center px-10 py-5">
-                        Request a Quote
+                    <a href="tel:2028036356" class="btn-outline flex items-center justify-center border-white text-white hover:bg-white hover:text-black">
+                        <i class="fa-solid fa-phone mr-2"></i> Insurance Claim? Call Now
                     </a>
                 </div>
 
-                <div class="mt-14 flex flex-wrap items-center gap-10 text-base font-heading font-bold text-gray-500 uppercase tracking-widest">
-                    <span class="flex items-center"><i class="fa-solid fa-biohazard text-brand-green mr-2 text-lg"></i> Biohazard & Disease</span>
-                    <span class="flex items-center"><i class="fa-solid fa-shield-virus text-brand-green mr-2 text-lg"></i> Trained & Insured</span>
-                    <span class="flex items-center"><i class="fa-solid fa-hospital text-brand-green mr-2 text-lg"></i> Hospital Grade</span>
-                    <span class="flex items-center"><i class="fa-solid fa-building text-brand-green mr-2 text-lg"></i> Commercial & Residential</span>
+                <div class="mt-12 flex flex-wrap items-center gap-6 text-xs font-heading font-bold text-gray-400 uppercase tracking-widest">
+                    <span class="flex items-center"><i class="fa-solid fa-handshake text-brand-green mr-2"></i> Allstate / Liberty Mutual Vendor</span>
+                    <span class="flex items-center"><i class="fa-solid fa-shield-halved text-brand-green mr-2"></i> $1M+ Liability Insurance</span>
                 </div>
             </div>
         </div>
         <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent z-10"></div>
     </header>
 
-    <!-- ==================== COVERAGE BADGES ==================== -->
-    <section class="relative z-20 -mt-16 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-8 shadow-card-lg border-t-4 border-brand-green hover:-translate-y-2 transition duration-300">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center text-white flex-shrink-0">
-                            <i class="fa-solid fa-map-location-dot text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-brand-black font-bold uppercase font-heading mb-1">Areas of Coverage</h3>
-                            <p class="text-gray-500 font-sans text-sm font-medium">Serving Washington DC, Maryland & Virginia</p>
-                        </div>
+    <!-- Trust Stats Bar -->
+    <section class="relative z-30 -mt-10 mb-0">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-black text-white grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-800 shadow-2xl">
+                <div class="flex items-center justify-center gap-4 py-6 px-8">
+                    <i class="fa-solid fa-circle-check text-brand-green text-3xl"></i>
+                    <div>
+                        <span class="block font-heading font-bold text-2xl text-white leading-none">100%</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest font-bold">Decontamination Guarantee</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 shadow-card-lg border-t-4 border-brand-black hover:border-brand-green hover:-translate-y-2 transition duration-300">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center text-brand-green flex-shrink-0">
-                            <i class="fa-solid fa-calendar-check text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-brand-black font-bold uppercase font-heading mb-1">Appointment</h3>
-                            <p class="text-gray-500 font-sans text-sm font-medium">Book Online Service</p>
-                        </div>
+                <div class="flex items-center justify-center gap-4 py-6 px-8">
+                    <i class="fa-solid fa-bolt text-brand-green text-3xl"></i>
+                    <div>
+                        <span class="block font-heading font-bold text-2xl text-white leading-none">&lt;2 Hrs</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest font-bold">Rapid Response Time</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 shadow-card-lg border-t-4 border-brand-black hover:border-brand-green hover:-translate-y-2 transition duration-300">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center text-brand-green flex-shrink-0">
-                            <i class="fa-solid fa-truck-medical text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl text-brand-black font-bold uppercase font-heading mb-1">24/7 Emergency</h3>
-                            <p class="text-gray-500 font-sans text-sm font-medium">Immediate Emergency Dispatch</p>
-                        </div>
+                <div class="flex items-center justify-center gap-4 py-6 px-8">
+                    <i class="fa-solid fa-file-invoice-dollar text-brand-green text-3xl"></i>
+                    <div>
+                        <span class="block font-heading font-bold text-2xl text-white leading-none">Direct</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest font-bold">Insurance Billing</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== ABOUT ==================== -->
-    <section id="about" class="py-24 bg-brand-gray relative overflow-hidden">
-        <div class="absolute inset-0 bg-pattern-dots bg-[length:24px_24px] opacity-20"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div>
-                    <span class="section-subtitle">About ZeroTrace Biohazard</span>
-                    <h2 class="text-4xl lg:text-6xl font-bold text-brand-black mb-8 font-heading uppercase leading-tight">Cleaning You Can See & Feel</h2>
-                    <p class="text-lg text-gray-600 font-sans mb-6 leading-relaxed">
-                        ZeroTrace Biohazard is a trusted leader in biohazard remediation, specializing in crime scene cleanup, trauma response, and hazardous waste decontamination. We are committed to restoring safety, protecting communities, and ensuring thorough, discreet, and professional cleanup services.
-                    </p>
-                    <p class="text-lg text-gray-600 font-sans mb-8 leading-relaxed">
-                        With advanced decontamination techniques, OSHA-certified protocols, and a highly trained team, we handle bloodborne pathogens, infectious disease control, industrial accidents, hoarding cleanup, and hazardous material disposal. Our <strong class="text-brand-black">ZeroTrace Guarantee</strong> ensures that every site we clean is 100% decontaminated, safe, and compliant with health regulations.
-                    </p>
-                    <p class="text-xl text-brand-black font-sans font-bold mb-10 pl-4 border-l-4 border-brand-green">
-                        At ZeroTrace Biohazard, we don't just clean &mdash; we restore peace of mind.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-6">
-                        <a href="#services" class="btn-brand flex items-center justify-center"><i class="fa-solid fa-biohazard mr-3"></i> Our Services</a>
-                        <a href="#contact" class="btn-outline flex items-center justify-center">Get An Estimate</a>
+    <!-- Services Section (Light Cards) -->
+    <section id="services" class="relative z-20 pt-16 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="section-subtitle justify-center">What We Do</span>
+                <h2 class="text-4xl font-bold text-brand-black font-heading">Common Job Types</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Serving property managers, police, funeral homes, and insurers across the DC/MD/VA region.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1: Crime Scene & Trauma -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-green group hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-biohazard text-2xl"></i>
                     </div>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Crime Scene & Trauma Cleanup</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        Homicides, suicides, assaults with blood and body fluids. Full remediation, disinfection, and odor elimination.
+                    </p>
+                    <a href="#contact" class="text-brand-green font-bold uppercase text-sm tracking-widest hover:text-brand-black transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
                 </div>
-                <div>
-                    <div class="grid grid-cols-2 gap-6 mb-10">
-                        <div class="bg-white p-8 shadow-card text-center">
-                            <span class="block text-6xl font-heading font-bold text-brand-green">100%</span>
-                            <span class="block text-sm font-bold uppercase tracking-widest text-gray-500 mt-2 font-heading">Satisfaction</span>
-                        </div>
-                        <div class="bg-white p-8 shadow-card text-center">
-                            <span class="block text-6xl font-heading font-bold text-brand-green">24/7</span>
-                            <span class="block text-sm font-bold uppercase tracking-widest text-gray-500 mt-2 font-heading">Service</span>
-                        </div>
+
+                <!-- Card 2: Unattended Death -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-black group hover:border-brand-green hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-bed-pulse text-2xl"></i>
                     </div>
-                    <div class="bg-white p-10 shadow-card border-l-4 border-brand-green">
-                        <h3 class="text-2xl font-bold text-brand-black uppercase font-heading mb-6">Full Service List</h3>
-                        <ul class="bio-list text-brand-black font-bold uppercase tracking-wide space-y-3 text-sm">
-                            <li>Biohazard Remediation</li>
-                            <li>Crime Scene Cleanup</li>
-                            <li>Unattended Death & Decomposition</li>
-                            <li>Hoarding and Clutter Removal</li>
-                            <li>Vehicle & Property Decontamination</li>
-                            <li>Extreme Cleaning</li>
-                        </ul>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Unattended Death / Decomposition</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        Natural deaths undiscovered for days or weeks. Biohazard removal, structural cleaning, and HVAC decontamination.
+                    </p>
+                    <a href="#contact" class="text-brand-black font-bold uppercase text-sm tracking-widest group-hover:text-brand-green transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Card 3: Accidental Death Scenes -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-black group hover:border-brand-green hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
                     </div>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Accidental Death Scenes</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        Falls, overdoses, and industrial accidents involving bodily fluids or infectious materials. Complete scene restoration.
+                    </p>
+                    <a href="#contact" class="text-brand-black font-bold uppercase text-sm tracking-widest group-hover:text-brand-green transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Card 4: Hoarding & Extreme Clutter -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-black group hover:border-brand-green hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-boxes-stacked text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Hoarding & Extreme Clutter</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        Often paired with biohazards like feces, mold, and pests. Insurance covers when it causes damage or health hazards.
+                    </p>
+                    <a href="#contact" class="text-brand-black font-bold uppercase text-sm tracking-widest group-hover:text-brand-green transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Card 5: Vehicle Decontamination -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-black group hover:border-brand-green hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-car text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Vehicle Decontamination</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        Fleet vehicles, rentals, or personal cars after trauma events or medical transport. Full interior decon and sanitization.
+                    </p>
+                    <a href="#contact" class="text-brand-black font-bold uppercase text-sm tracking-widest group-hover:text-brand-green transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Card 6: Infectious Disease Response -->
+                <div class="bg-white p-8 shadow-card border-t-4 border-brand-black group hover:border-brand-green hover:-translate-y-2 transition duration-300 clip-spike">
+                    <div class="w-14 h-14 bg-brand-gray rounded flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-white transition text-brand-black">
+                        <i class="fa-solid fa-virus text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl text-brand-black font-bold mb-3 uppercase font-heading">Infectious Disease Response</h3>
+                    <p class="text-gray-600 font-sans text-sm mb-6 leading-relaxed">
+                        High-risk cases including hepatitis, HIV, or outbreak response. Covered when policy includes communicable disease provisions.
+                    </p>
+                    <a href="#contact" class="text-brand-black font-bold uppercase text-sm tracking-widest group-hover:text-brand-green transition">Get Estimate <i class="fa-solid fa-arrow-right ml-1"></i></a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Insurance & Partner Trust Bar -->
+    <section id="insurance" class="py-10 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <span class="text-xs font-heading font-bold text-gray-400 uppercase tracking-[0.2em]">Trusted By Those Who Matter Most</span>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center gap-2 py-4">
+                    <i class="fa-solid fa-shield-halved text-brand-green text-2xl"></i>
+                    <span class="font-heading font-bold text-sm text-brand-black uppercase">Allstate Approved Vendor</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 py-4">
+                    <i class="fa-solid fa-shield-halved text-brand-green text-2xl"></i>
+                    <span class="font-heading font-bold text-sm text-brand-black uppercase">Liberty Mutual Approved</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 py-4">
+                    <i class="fa-solid fa-building-columns text-brand-green text-2xl"></i>
+                    <span class="font-heading font-bold text-sm text-brand-black uppercase">Property Managers & Police</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 py-4">
+                    <i class="fa-solid fa-cross text-brand-green text-2xl"></i>
+                    <span class="font-heading font-bold text-sm text-brand-black uppercase">Funeral Homes & Insurers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Us (White Background) -->
+    <section id="about" class="py-20 bg-brand-gray relative overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background: radial-gradient(ellipse at center, rgba(124,186,1,0.03) 0%, transparent 70%);"></div>
 
     <!-- ==================== FOR INSURANCE & PROPERTY MANAGERS ==================== -->
     <section class="py-24 bg-black text-white relative overflow-hidden">
@@ -623,11 +687,13 @@
                         </div>
                         <div class="mb-6">
                             <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Service Needed</label>
-                            <select class="w-full bg-brand-gray border border-gray-300 text-brand-black p-4 focus:outline-none focus:border-brand-green transition text-base">
-                                <option>Crime Scene Cleanup</option>
-                                <option>Biohazard Remediation</option>
-                                <option>Hoarding & Clutter</option>
-                                <option>Mold Remediation</option>
+                            <select class="w-full bg-brand-gray border border-gray-300 text-brand-black p-3 focus:outline-none focus:border-brand-green transition">
+                                <option>Crime Scene & Trauma Cleanup</option>
+                                <option>Unattended Death / Decomposition</option>
+                                <option>Accidental Death Scene</option>
+                                <option>Hoarding & Extreme Clutter</option>
+                                <option>Vehicle Decontamination</option>
+                                <option>Infectious Disease Response</option>
                                 <option>Other</option>
                             </select>
                         </div>
@@ -642,34 +708,12 @@
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="bg-black text-white py-16 border-t border-brand-dark relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <div>
-                    <span class="font-heading font-bold text-3xl tracking-wide block mb-4">ZERO<span class="text-brand-green">TRACE</span></span>
-                    <p class="text-gray-400 font-sans text-sm leading-relaxed">Our expert cleaners are carefully selected and screened and then fully trained to give them a deep understanding of products and procedures and help them provide top-quality services at all times.</p>
-                    <a href="#contact" class="inline-block mt-6 btn-brand text-xs">Request a Quote</a>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-xl uppercase tracking-wide text-white mb-6">Quick Links</h4>
-                    <ul class="space-y-3 text-sm font-sans text-gray-400">
-                        <li><a href="#" class="hover:text-brand-green transition">Home</a></li>
-                        <li><a href="#about" class="hover:text-brand-green transition">About Us</a></li>
-                        <li><a href="#services" class="hover:text-brand-green transition">Services</a></li>
-                        <li><a href="#contact" class="hover:text-brand-green transition">Contacts</a></li>
-                        <li><a href="#faq" class="hover:text-brand-green transition">FAQs</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-heading font-bold text-xl uppercase tracking-wide text-white mb-6">Contacts</h4>
-                    <div class="space-y-4 text-sm font-sans text-gray-400">
-                        <p class="flex items-start"><i class="fa-solid fa-location-dot text-brand-green mr-3 mt-1"></i> 1201 Connecticut Ave. NW STE 531,<br>Washington, D.C. 20036</p>
-                        <p class="flex items-start"><i class="fa-solid fa-clock text-brand-green mr-3 mt-1"></i> Mon-Sun 08:00 AM - 05:00 PM</p>
-                        <p class="flex items-start"><i class="fa-solid fa-phone text-brand-green mr-3 mt-1"></i> <a href="tel:2028036356" class="hover:text-brand-green transition">(202) 803-6356 (24/7 Emergency)</a></p>
-                        <p class="flex items-start"><i class="fa-solid fa-envelope text-brand-green mr-3 mt-1"></i> <a href="mailto:support@zerotracebiohazard.com" class="hover:text-brand-green transition">support@zerotracebiohazard.com</a></p>
-                    </div>
-                </div>
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-brand-dark relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center relative z-10">
+            <div class="mb-6 md:mb-0">
+                <span class="font-heading font-bold text-2xl tracking-wide">ZERO<span class="text-brand-green">TRACE</span></span>
+                <p class="text-xs text-gray-500 mt-2 font-sans">&copy; 2026 ZeroTrace Biohazard. All Rights Reserved.</p>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center">
                 <p class="text-xs text-gray-500 font-sans">&copy; 2025 ZeroTrace Biohazard. All Rights Reserved.</p>
