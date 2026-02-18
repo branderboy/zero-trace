@@ -69,6 +69,7 @@
 
         /* Buttons */
         .btn-brand {
+            display: inline-block;
             background: #7cba01;
             color: #fff;
             font-weight: 800;
@@ -76,17 +77,19 @@
             padding: 1rem 2.5rem;
             transition: all 0.2s ease;
             position: relative;
-            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
             box-shadow: 0 4px 6px rgba(124, 186, 1, 0.3);
+            letter-spacing: 0.05em;
         }
-        
+
         .btn-brand:hover {
             background: #111111;
             color: #7cba01;
             transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         .btn-outline {
+            display: inline-block;
             background-color: transparent;
             color: #111111;
             font-weight: 700;
@@ -94,7 +97,7 @@
             padding: 1rem 2.5rem;
             border: 2px solid #111111;
             transition: all 0.3s ease;
-            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+            letter-spacing: 0.05em;
         }
 
         .btn-outline:hover {
